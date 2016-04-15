@@ -3,10 +3,10 @@ function run(msg, matches)
 local reply_id = msg['id']
 
 local info = '#Name : '..msg.from.first_name..'\n\n'
-..'♦Id : '..msg.from.id..'\n'
-..'♦Username : @'..msg.from.username..'\n\n'
-..'♦Group Id : '..msg.to.id..'\n'
-..'♦Group name : '..msg.to.title
+..'♦ایدی تو کسکش : '..msg.from.id..'\n'
+..'♦یوز تو کسکش : @'..msg.from.username..'\n\n'
+..'♦ایدی این گروه کسکش : '..msg.to.id..'\n'
+..'♦اسم کیری این گروه : '..msg.to.title
 
 reply_msg(reply_id, info, ok_cb, false)
 end
